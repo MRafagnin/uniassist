@@ -1,4 +1,4 @@
-from uniassist.guardrails import is_likely_in_scope, redact_pii
+from uniassist.guardrails import is_in_scope, is_likely_in_scope, redact, redact_pii
 
 
 def test_redacts_email():
@@ -26,3 +26,14 @@ def test_in_scope_detection():
     assert is_likely_in_scope("How do I connect to UniWiFi on my laptop?")
     assert is_likely_in_scope("Canvas won't load")
     assert not is_likely_in_scope("What's the weather like today?")
+
+
+def test_redact_alias():
+    assert redact("a@b.co") == redact_pii("a@b.co")
+
+
+def test_is_in_scope_keywords_and_verbs():
+    assert is_in_scope("How do I reset my password?")
+    assert is_in_scope("install Adobe Acrobat")
+    assert is_in_scope("connect to eduroam")
+    assert not is_in_scope("Recommend a recipe for risotto")
