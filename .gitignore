@@ -13,7 +13,8 @@ dist/
 
 # Data (corpus + index are large / regenerable)
 data/raw/
-data/raw_servicenow/
+data/raw_servicenow/*
+!data/raw_servicenow/sn_ids.txt
 data/raw_manual/*
 !data/raw_manual/sn_top132.txt
 data/processed/
