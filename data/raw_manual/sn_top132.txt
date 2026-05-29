@@ -1,0 +1,425 @@
+Browse Technology
+Filter 
+All
+Sort 
+Popular
+ 
+Item 1 of 132,
+Knowledge
+What is EndNote?
+Item 2 of 132,
+Knowledge
+MFA OKTA - Get started with multi-factor authentication
+Item 3 of 132,
+Knowledge
+How do I install and use the Campus Cisco VPN Client on my computer?
+Item 4 of 132,
+Knowledge
+What is the Virtual Private Network (VPN)?
+Item 5 of 132,
+Knowledge
+MFA OKTA - Frequently Asked Questions
+Item 6 of 132,
+Knowledge
+MFA OKTA - Set up your mobile device
+Item 7 of 132,
+Knowledge
+How do I get Adobe Creative Cloud?
+Item 8 of 132,
+Knowledge
+What software is available to University staff?
+Item 9 of 132,
+Knowledge
+What is Zoom Videoconferencing?
+Item 10 of 132,
+Knowledge
+Sign into Zoom from my device
+Item 11 of 132,
+Knowledge
+How do I connect to the University's VPN from my Windows computer?
+Item 12 of 132,
+Knowledge
+What is Adobe Creative Cloud
+Item 13 of 132,
+Knowledge
+How do I contact the Shared Service Centre?
+You can get technical support from the University's Shared Service Centre in a number of ways, whether it's by Services Portal or contacting our support teams. Call us 9351 2000 The Shared Service Centre will take your call. ICT is open on weekdays between 7am and 9pm. First level support is also available Saturdays 9am - 5pm. Visit us Staffed Learning Hubs Our IT specialists across our Learning Hubs can provide hands-on tech support. Email us ict.support@sydney.edu.au We recommend email for non-urgent queries. Our teams will endeavour to get back to you within 48 hours. If you are a student seeking advice regarding your studies or enrolments, visit Student Enquiries.
+Item 14 of 132,
+Knowledge
+How do I connect to the University's VPN from my Mac computer?
+Item 15 of 132,
+Knowledge
+Access UniConnect Cloud and save content (Mac)
+Item 16 of 132,
+Knowledge
+How to access student learning resources off campus in China
+Most students will be able to access the majority of their core teaching and learning tools without a VPN, and we encourage you to try this first. Use the new VPN solution if you encounter any issues, learn how to access the new VPN below. How to access UniConnect Cloud in China Students in China are now able to use a new application portal called Uniconnect Cloud, to access software provided by the University. This portal can also be used as a central hub to access learning resources such as Canvas and other tools. Students log in to the service using their UniKey (four letters followed by four numbers). As is the case in Australia, there may be areas in China that have slow access to the internet, which could affect a student's experience. To find out what apps and software are available on UniConnect Cloud see this article. How to access Canvas Canvas is the University's Learning Management System and online learning platform and is accessible in China. If you experience slow performance issues we recommend connecting to the new University VPN first. For more information on how to access Canvas see this article. How to download Zoom in China Zoom is a videoconferencing tool and may be used in some of your classes for interactive content. Information on Zoom can be found here including how to download this tool. If you are in China and experience any issues accessing these tools, please contact the University Shared Service Centre via email at ict.support@sydney.edu.au or for urgent access issues please phone on +61 2 8627 1444 (option 3 for ICT).
+Item 17 of 132,
+Knowledge
+MFA OKTA - Transfer Okta Verify to a new mobile device
+Item 18 of 132,
+Knowledge
+MFA OKTA - I don't have access to my MFA-enabled device
+Item 19 of 132,
+Knowledge
+How to map my network drive on a Windows PC?
+Item 20 of 132,
+Knowledge
+Get started with eduroam wi-fi
+Item 21 of 132,
+Knowledge
+What apps are available in UniConnect Cloud?
+Item 22 of 132,
+Knowledge
+Access UniConnect Cloud and save contents (Windows)
+Item 23 of 132,
+Knowledge
+What is REDCap?
+Research Electronic Data Capture (REDCap) is an online, customisable data capture tool. It provides the ideal means to gather data in a secure environment and avoids the need to enter data into spreadsheets or use paper-based forms and surveys. At its most basic, you can use the REDCap functions to build data collection forms consisting of "variables" which take the appearance of text boxes, check boxes, dropdown menus, and so on. These forms can also be made accessible over the internet to research participants as "surveys". Filling out these forms enters data directly into a secure database on the REDCap server. Reasons to use REDCap Fast and flexible – building a project from scratch is a simple matter of point-and-click using your internet browser. Clean data – REDCap makes it easy to collect clean data as your data collection forms can be standardised and include validation and data quality rules. Suitable for "highly protected" data – data is stored securely, is encrypted in transit and at rest, and resides on University-managed servers within NSW. Unless you export data to your personal device, the data is always stored securely on these servers. REDCap has been approved by ICT as suitable for data classified as "highly protected" under the University's data classifications. Secure collaboration – both UniKey holders and external collaborators can benefit from simultaneously accessing data on REDCap in a secure, encrypted manner. Access to specific data and functions in REDCap are highly customisable for each user. Import and export – even if your data isn't currently in REDCap, you can easily build a suitable project and bulk upload existing data to ensure it meets relevant data handling requirements. Data can be exported to CSV, PDF, SAS, Stata, R, or SPSS for analysis. Identifying information can be removed with one click if required. Powerful – REDCap can be used to manage longitudinal clinical trials and includes features such as audit trails, randomisation, scheduling, data access groups, and a data resolution workflow module, amongst others. Free and supported – The University's installation of REDCap is maintained by ICT specifically for University of Sydney researchers and their affiliates. Functional support and training are available from Sydney Informatics Hub. Both services are free-of-charge. There is also a highly-engaged community of REDCap users both internationally and within the University (via our Yammer group). Some Frequently Asked Questions Is REDCap at the University of Sydney the same as REDCap at other institutions? Is there a REDCap user manual? How do I use REDCap? What REDCap support is provided by the University? What software will I need to use REDCap? Who can access REDCap? What should I do if I cant login or have forgotten my password? How do I grant users access to specific REDCap projects? Why do I need to move my project into Production mode before collecting data? Why can't I see specific projects? What if I can't see the new project button? What do I do with the data when the project is finished? Can it stay on REDCap indefinitely? How do I export the data from my REDCap project? How can I enter data in REDCap when I don't have an internet connection? Do I need to back up my REDCap project? Am I able to create a multi-language project (containing forms in different languages)? Who can access REDCap? REDCap is available to all University staff, students and affiliates who hold a UniKey, for non-commercial purposes. External users (both institutional and non-institutional, including NSW Health) can gain access to the University's REDCap if they are working on a project with a University of Sydney researcher. External users cannot use the University's REDCap for their own purposes. External users may join projects created by UniKey holders but may not create new projects themselves, as our licence agreement with the vendor of REDCap stipulates that only UniKey holders can create new projects. Accessing REDCap for UniKey holders Accessing REDCap for NSW Health employees Accessing REDCap for external users Note: participants completing surveys you have designed on REDCap do not need to log in. REDCap generates unique web links for surveys which are accessible by participants.
+Item 24 of 132,
+Knowledge
+What is the Researcher Dashboard (DashR)?
+Item 25 of 132,
+Knowledge
+How to download and install SPSS Statistics or Amos
+Item 26 of 132,
+Knowledge
+Connect to the University wireless network
+Item 27 of 132,
+Knowledge
+How to configure and use VPN on your iPhone/iPad
+Item 28 of 132,
+Knowledge
+SPSS Statistics and SPSS AMOS
+Item 29 of 132,
+Knowledge
+What is a UniKey account?
+Item 30 of 132,
+Knowledge
+What is Qualtrics?
+Qualtrics is a web based survey tool that has a number of applications and platforms. The University of Sydney has purchased an enterprise licence that provides all University Staff and Students with access to Qualtrics Research Suite. For more information about Qualtrics please visit the Qualtrics website. In addition to the University of Sydney's enterprise Qualtrics instance https://qualtrics.sydney.edu.au there are a number of individual Faculties and School managed instances (see below for more information). If you are a new user or starting a new survey it is recommended that you use https://qualtrics.sydney.edu.au. Access To access Qualtrics visit the University of Sydney Enterprise Qualtrics site https://qualtrics.sydney.edu.au and login using your Unikey and password. Qualtrics is available from on and off the University of Sydney network and can be access using an internet browser on Windows, Mac OS X and Linux platforms. Qualtrics can also be accessed via Apple and Android mobile apps. Eligibility University of Sydney staff and students are eligible to use Qualtrics. The University of Sydney instance of Qualtrics (https://qualtrics.sydney.edu.au) is not currently available for affiliates of the University. Training The following online resources are available to end users Online tutorials are available at https://www.qualtrics.com/support/ Webinars are available at https://www.qualtrics.com/support/trainings-and-webinars/on-demand-webinars/ The University does not provide end-user training, but training can be requested directly from Qualtrics training team – training@qualtrics.com Information Security The University of Sydney enterprise Qualtrics instance is suitable for the following data classifications: Public Protected Highly Protected Note: data restrictions may apply to other instances of Qualtrics. Please be aware that not all instances of Qualtrics use the same infrastructure and data storage and may not meet the University of Sydney's data security requirements. Contact ICT Information Security for further advice. Premium Add-ons Qualtrics premium add-on features are offered on a per division (Faculty/University School) basis and are available if purchased by your Faculty or University School. If you would like to request an add-on, please discuss your requirements with your Faculty Research Manager. Faculty Research Managers can purchase a new premium add-on by contacting the ICT Service Desk. Divisions Users are automatically added to divisions based on their HR appointment (Staff) or Faculty (Students). Get Help Contact the Qualtrics Service Desk for help using the functions of Qualtrics Research Suite: Self-service: https://www.qualtrics.com/support/ Email: support@qualtrics.com Contact the ICT Service Desk if you are experiencing issues with Qualtrics: Email: ict.support@sydney.edu.au Phone: +61 (2) 9351 2000 (Option 2)
+Item 31 of 132,
+Knowledge
+MFA OKTA - Setup password management (self-service)
+Item 32 of 132,
+Knowledge
+What is Office 365?
+Item 33 of 132,
+Knowledge
+What is the Research Data Store (RDS)?
+The Research Data Store (RDS) is an enterprise grade Network Attached Storage (NAS) device, which has a large and expandable storage capacity. Once granted access, users can simply use their Unikey credentials to map a network drive to their allocated storage space on the RDS NAS. This will allow users to access their storage space from any computer on the university network or off-campus via VPN. Researchers are required to have a Research Data Management Plan and have agreed to the Research Data Management Policy Declaration to be able to use the Research Data Store. This is performed by creating a new project within the Researcher Dashboard (DashR). Creating a DashR project helps the University to better understand its research data, maintain the RDS service into the future and align itself to broader national programs to make research data discoverable and re-usable. Numerous measures are in place to ensure your data is safe on the RDS. Redundant hardware: The RDS itself is hosted on an enterprise-grade storage platform, which has inbuilt redundancy at different hardware levels. Backup: RDS data is backed up on a regular basis. Nightly backups are kept for seven days, weekly backups are kept for four weeks and monthly backups are kept for three months. Disaster Recovery (DR): The RDS service will be accessible to researchers in a disaster scenario. All projects are guaranteed up to 2TB data storage without requiring additional approval; only projects that exceed 2TB will need to be reviewed. If your project needs more storage than your current quota, please contact your respective Faculty Research Manager (FRM).
+Item 34 of 132,
+Knowledge
+MFA OKTA - How to use Password Management self-service
+Item 35 of 132,
+Knowledge
+How to get a copy of NVivo
+Item 36 of 132,
+Knowledge
+Wi-Fi at the University
+Item 37 of 132,
+Knowledge
+How do I use the VPN on the iPhone/iPad?
+Item 38 of 132,
+Knowledge
+How to request Mathematica for a personally owned machine (student)
+Item 39 of 132,
+Knowledge
+Map a network drive on a Mac
+Item 40 of 132,
+Knowledge
+Security updates for your devices
+Item 41 of 132,
+Knowledge
+Cisco desk phones at the University
+Item 42 of 132,
+Knowledge
+How to get GraphPad Prism
+Item 43 of 132,
+Knowledge
+Request a UniKey extension
+UniKey expiry dates for staff and students are aligned with contract dates in Workday (University Human Resource System) and Sydney Student systems. Affiliates not in Workday, and consultants and suppliers with UniKeys approaching expiry will receive an email notification 21-days out with a reminder 3-days from their UniKey expiry date. Contractors, Consultants and Suppliers: If you are a contractor, consultant or supplier with a contract term that needs to be extended, you can arrange a UniKey account extension through your manager/supervisor. Ask your manager/supervisor to fill out the UniKey Extension form on the Service Management Portal. Affiliates: If your details are already in Workday and you have a staff ID, your UniKey will be renewed automatically. Affiliate details in Workday cannot be updated by Information and Communications Technology; your manager or supervisor will need to contact Human Resources on your behalf. If your details are not in Workday, ask your manager or supervisor to complete the UniKey Extension form on the Service Management Portal. Extensions to holders of an Honorary Title: If the details of an Honorary title holder are in Workday their UniKey will be automatically extended. If the details of an Honorary title holder are not in Workday their UniKey can be extended for a maximum period of twelve months after the expiry date. I am neither a student or staff member: If you are neither a staff member, nor a student of the University of Sydney, your manager or supervisor must apply via Service Now to extend your Unikey on your behalf before it expires.
+Item 44 of 132,
+Knowledge
+MFA OKTA - Download Okta Verify for Android (China)
+Item 45 of 132,
+Knowledge
+What is NVivo?
+Item 46 of 132,
+Knowledge
+How to access Office 365
+Item 47 of 132,
+Knowledge
+What is the University code repository?
+The University Code Repository is a software repository management platform using an enterprise edition of GitHub. It was implemented as a university-wide resource to solve problems collaboratively and isn't just for coding: it is a platform for any complex, creative work requiring strong version control and collaborative input at the University of Sydney. Collaboration With GitHub Enterprise, code collaboration and review are built into the development process. Teams can share work, discuss changes, and get feedback all in one place. Pull requests let users propose changes, share ideas about code, and learn from each other—all in a clean, timeline-style interface. With everyone working together on one platform, users can gain greater visibility in to their projects. An ElasticSearch cluster allows any user to find code that already exists across the University. Leveraging existing code saves time, and if it is improved along the way, everyone wins. Monitoring and Dashboards: Allows users to gain visibility into work across their projects and teams. GitHub Enterprise is free for staff, students and affiliates. Getting started: Visit https://github.sydney.edu.au and enter your UniKey and UniKey password to login. The platform can be accessed from anywhere in the world. The code repository uses the open source Git-distributed version control system with the GitHub management application, and it's not just for storing code. Documents, blogs, research papers, and other text-based work can use the platform for version control, sharing, and collaboration. The Code Repository is protected by the University's internal firewalls and additionally, SSH is enabled. The platform operates in high availability mode which is designed to minimise any service disruption. Two-factor authentication (2FA) is supported.
+Item 48 of 132,
+Knowledge
+What is GraphPad Prism?
+Item 49 of 132,
+Knowledge
+How do I use file encryption?
+All University-workstations or devices storing Highly Protected data are required to be encrypted as per the Cyber Security Standard – Data Handling and Cyber Security Standard – Security Hardening. For devices under University management, encryption should be delivered as part of the Secure Baseline for all endpoints. In some cases, users may need to manually encrypt if they are using a non-University managed device and are handling Highly Protected data. For example, users that are part of research teams that are using personal devices to analyse, access or otherwise store Highly Protected data. File encryption is a method of securing a file or series of files from unauthorised access and tampering. Typically, these solutions work by turning a folder into a container of files that, without a special application and password, will be inaccessible. Depending on the software used, the container can be called a vault, volume or archive. Cryptomator is a free file encryption solution that works by encrypting a folder you specify as a "vault." It encrypts folders and files directly as well as encrypting file or folder names, due to this, it is significantly easier to sync with cloud storage as it is only going to sync file by file, as opposed to synchronising a complete container or archive. VeraCrypt is free encryption software which you can download from their website. VeraCrypt is specifically useful for when you need to encrypt cloud storage or a shared drive as a requirement of an ethics approval or similar and you are unable to store it locally as well. A sufficiently strong password has a minimum length of 13 alphabetic characters, or a minimum length of 10 characters consisting of at least three of the following character sets.
+Item 50 of 132,
+Knowledge
+What is the eNotebook?
+Item 51 of 132,
+Knowledge
+How to download and install MATLAB and Simulink
+Item 52 of 132,
+Knowledge
+What are the software licensing terms and conditions at the University?
+Item 53 of 132,
+Knowledge
+How do I recognise phishing emails and what should I do?
+Phishing is a psychological attack used by malicious individuals to trick you into giving up information or taking an action. Phishing originally described attacks simply 'fishing' for your username and password. The term has now evolved to cover almost any message-based attack (including via social media and instant messaging). These attacks begin with an attacker sending a message pretending to be from someone or something you know or recognise. These messages then entice you into taking an action such as clicking on a malicious link, opening a malicious attachment or responding to a scam. How do I spot phishing? Names that don't match the email address (e.g. 'University of Sydney HR' sending from a gmail account). Emails with a strange reply address that doesn't match the From: address. Alarming tones, threats of account closure and immediate action. Bad grammar and misspellings. Generic placeholder style language such as 'Dear Customer'. Websites with an unusual web address. Spear phishing: The concept of 'spear phishing' is the same as 'phishing', except that instead of sending as many emails as possible for maximum gain, the attack will send a specially crafted email to very select individuals. What should I do if I receive a phishing email? Do not respond and do not click any links! Immediately report the email by using the 'Report Message' function in Outlook, or report to the email address phishing@sydney.edu.au. If you believe you have fallen victim to an attack, immediately change your UniKey password and contact the University Shared Service Centre on +61 2 9351 2000.
+Item 54 of 132,
+Knowledge
+Using the University phonebook
+Also known as the staff directory, the new University phonebook lets you find University staff and departments via their phone number and other contact details. As a staff member, you can also add, alter and remove your entries. The phonebook can be accessed directly via the University website, as well as via the homepage's footer. You can make requests and enquire about the phonebook online via the Service Portal. Note: The phonebook is different from the Global Address List (GAL) which is a University wide Microsoft Exchange address book that can be used to search for the email addresses, phone numbers, titles and locations of all staff members of the University.
+Item 55 of 132,
+Knowledge
+How to schedule a new Zoom meeting using Outlook
+Item 56 of 132,
+Knowledge
+When should I use a Virtual Private Network (VPN) connection?
+Item 57 of 132,
+Knowledge
+What are the paths for University network share drives?
+Item 58 of 132,
+Knowledge
+MFA OKTA - How to use your Google Authenticator as a backup factor
+Item 59 of 132,
+Knowledge
+Connect to eduroam wi-fi (macOS)
+Item 60 of 132,
+Knowledge
+MFA OKTA - Set Google Authenticator as your backup factor
+Item 61 of 132,
+Knowledge
+University of Sydney Self Service
+Item 62 of 132,
+Knowledge
+Connect to eduroam wi-fi (Windows)
+Item 63 of 132,
+Knowledge
+How do I install apps using Company Portal?
+Item 64 of 132,
+Knowledge
+How do I set up my University email on iPhone (Mail app)?
+Item 65 of 132,
+Knowledge
+How to set up staff Follow-Me-Print on a University Mac
+Item 66 of 132,
+Knowledge
+Request a new UniKey account
+Item 67 of 132,
+Knowledge
+MFA OKTA - Unenrol your mobile device from MFA
+Item 68 of 132,
+Knowledge
+How to print from your personal Windows computer
+Item 69 of 132,
+Knowledge
+What is UniConnect?
+Item 70 of 132,
+Knowledge
+How do I use OneDrive?
+OneDrive is a cloud file storage service that lets you share, synchronise and collaborate on documents, from any device that supports the app. As part of the University Office 365 implementation, staff have free access to a OneDrive account with 3000GB storage to store your work documents. OneDrive features: Access anywhere: once stored on your University OneDrive account, your documents can be opened from your phone, tablet, laptop or browser. You can access your OneDrive outside campus without a VPN connection. Data security: mechanisms are in place to ensure only you and your collaborators can see your files. Save space: choose the files and folders you want to synchronise to your device, or use the Files On-Demand feature to intelligently download files as you use them. Version history and recovery: deleted OneDrive documents are kept for seven years, allowing you to easily recover files and restore previous version. All staff can access their OneDrive as part of their Office 365 account. Office 365 is available to all staff with their University email address. You can access your University OneDrive account online, on your phones, tablets and laptops. Online: log into the Office 365 portal with your University email address, then open the OneDrive app. Devices: download OneDrive for your laptops, Android or iOS devices. ICT's Information Security team has conducted an extensive security assessment of Office 365, and has given approval for it to be used for highly confidential data in many cases, provided it has been encrypted. OneDrive data is stored on Australian servers. The only people who can access your files are you, the collaborators whom with you selectively share your files, and system administrators. You can access your University OneDrive account from your browser or your devices, from any location on and off campus. All you need is an active internet connection to access University OneDrive when you are off campus - no VPN is required.
+Item 71 of 132,
+Knowledge
+ICT Field Services at the University
+Item 72 of 132,
+Knowledge
+What is a role-based account?
+Item 73 of 132,
+Knowledge
+How to Renew your NVivo license
+Item 74 of 132,
+Knowledge
+How do I configure VPN on an Android phone?
+Item 75 of 132,
+Knowledge
+Connect to eduroam wi-fi at other institutions
+Item 76 of 132,
+Knowledge
+How to connect to the UniSydney wireless network on an Android device
+Item 77 of 132,
+Knowledge
+What is DocuSign. How do I sign documents electronically?
+DocuSign is used by the University for digitally signing agreements and other documents. It offers the following features and benefits: High security and legal admissibility standards. Sign documents from wherever you're working. A simple and automated document flow. Increased transaction speed and convenience. Document tracking and automatic reminders. Compatible with all standard document formats. Compatible with all major desktop browsers, tablets and mobiles. When can DocuSign be used? For high risk or high value transactions such as deeds or registerable documents, consult with OGC before using Docusign. For frequently used documents and forms that require internal approvals it may be possible to get a better solution via one of our digital workflow platforms such as ServiceNow or SAP Ariba. Where appropriate, it is the responsibility of the sender to ensure the signed document and associated certificate are stored in Records Online (TRIM) as per University records management policies. Signing documents: Anyone can freely sign documents sent to them without requiring a DocuSign account. All that is needed is a standard computer, tablet or mobile device with an up to date web browser. An account provides users with a dashboard view of signed documents and any waiting to be signed. Sending documents: Users who wish to send documents can access DocuSign in the same way as Document Signers. Sending documents requires additional privileges which can be requested using the DocuSign sender access form. Only University staff and HDR students can be given access to send documents.
+Item 78 of 132,
+Knowledge
+University of Sydney Software Center
+Item 79 of 132,
+Knowledge
+How do I set up University email on Outlook for Windows?
+Item 80 of 132,
+Knowledge
+How to get a role-based email account
+Item 81 of 132,
+Knowledge
+How do I set up my University email on iPhone (Outlook)?
+Item 82 of 132,
+Knowledge
+How do I set up University email on Outlook for Mac?
+Item 83 of 132,
+Knowledge
+What is MATLAB and Simulink?
+Item 84 of 132,
+Knowledge
+Update a phonebook entry
+Item 85 of 132,
+Knowledge
+Technology and working remotely: frequently asked questions
+Item 86 of 132,
+Knowledge
+What to do when Mobility Print jobs don't appear on the printer
+Item 87 of 132,
+Knowledge
+How to print from your own Mac computer
+Item 88 of 132,
+Knowledge
+What is Highly Protected Data?
+During the University's day-to-day operations, we may collect or process sensitive information that could have serious implications for individuals, third parties, or the University. Based in the degree of sensitivity of the information and the risk associated with any loss of confidentiality, all University data is classified into either Public, Protected, or Highly Protected security classifications in line with our Cyber Security Standard - Data Security. The classification of data determines how that data should be managed - how it should be transferred, stored and accessed. Highly protected data: Data that is created, collected, stored, processed, sent or received by the University is classified as "Highly Protected" if loss of confidentiality of the research data would result in serious economic/financial, or reputation impact to an individual or the University, or result in a notifiable privacy breach. Examples of highly protected data include: Health information that allows identification of individuals; Identifiable information relating to an individual's ethnic or racial origin, political opinions, religious or philosophical beliefs; Information about the nature and location of a place or an item of Aboriginal and/or Torres Strait Islander cultural significance; Confidential commercial agreements; Ecological information that may place vulnerable species or ecological communities at risk. Protected data: the information is not generally available to the public, or loss of confidentiality of the research data would have a material impact on the University or an individual. Examples include unpublished research data and results, personal information other than sensitive personal information. Public data: it is generally available to the public, it does not have a material impact on the University or an individual in the event of loss of information.
+Item 89 of 132,
+Knowledge
+What is Microsoft Outlook?
+Item 90 of 132,
+Knowledge
+Cyber security: working from home reference guide
+Item 91 of 132,
+Knowledge
+How to renew my GraphPad Prism license
+Item 92 of 132,
+Knowledge
+How students and staff can remotely access computers in on-campus student computer labs
+Item 93 of 132,
+Knowledge
+How do I secure my Windows device?
+Staff are required to encrypt their devices to ensure their data is protected. While users should be saving their data on the University's cloud storage solutions, your computer will need to be encrypted to secure synced files from these services. Securing a Dell University-owned device: Before you start, make sure you have undertaken the following: The machine must be on the University's MCS domain. Save and close any documents you are working on. Back up all your data. Do this on campus. You will need to have Administrator access to your device to undertake this process. Dual boot laptops are not supported and should not be used to store protected data. Select the Start Menu. Search for BitLocker. Select Manage BitLocker. Click Turn on BitLocker. The BitLocker Wizard will determine if your computer is able to run BitLocker and will run through the required steps to enable encryption. Securing a personal Windows device: Personal devices can also be encrypted although the encryption key will not be saved on the University's Active Directory. If you experience any issues please contact the Shared Service Centre.
+Item 94 of 132,
+Knowledge
+How do I install Office 365 on my desktop computer?
+Item 95 of 132,
+Knowledge
+How to login to a Cisco 79xx phone for the first time
+Item 96 of 132,
+Knowledge
+How to access your voicemail from the Web Inbox
+Item 97 of 132,
+Knowledge
+Resolve Certificate Revoked Errors (Mac running Google Chrome)
+Item 98 of 132,
+Knowledge
+A guide to University-owned computers
+Item 99 of 132,
+Knowledge
+How to reset a Cisco phone login using Cisco Self-Care
+Item 100 of 132,
+Knowledge
+How to prevent unauthorised Zoom participants and secure your Zoom meeting
+Item 101 of 132,
+Knowledge
+Workaround for Adobe login issues
+Item 102 of 132,
+Knowledge
+How to get a new landline phone or University extension
+Item 103 of 132,
+Knowledge
+How do I get a copy of Microsoft Visio?
+Microsoft Visio's advanced diagramming tools help you simplify complexity with dynamic, data-driven visuals and new ways to share on the Web in real time. For Windows only. We offer the Desktop installer option only. not O365 Visio, sometimes referred to as Web, Online, or Subscription based. Microsoft Visio allows you to: Work with a diverse set of intuitive, professional diagramming tools; Bring your diagrams to life with dynamic, data-driven visuals; Share, data-linked diagrams with others via their browsers. To request a copy of Microsoft Visio: Navigate to Order available software. Complete the order form. Note: Microsoft Visio is not included in the Microsoft Office suite covered in the CAUDIT Enterprise Licensing Agreement. The cost (approximately $60) of the application will be charged back to your faculty/unit. Microsoft Visio does not run natively on Mac OS.
+Item 104 of 132,
+Knowledge
+Offboard your student data
+UniKey accounts are maintained only for current students. Following the completion of course requirements or the deferment of studies, your access to University services will change. If you are leaving the University soon, the access to each systems/services will be removed at different time. The timeline is based on your situation and the full detail will be sent at different stage via email to you. Unikey expiration is a normal process as Unikey accounts are only maintained for current students and staff. Transfer your material: You have two weeks from the date of this communication to transfer your personal documents from University storage applications (such as OneDrive) to your personal storage application. If you choose to transfer your material while you're on campus, the University WiFi is accessible to you for only this same two-week period. Completed your course requirements: Following the completion of course requirements or the deferment of studies, your access to University services will change, your access will be removed to all University systems and applications except Sydney Student, Sydney email and CareerHub until graduation. Completed your graduation ceremony: After graduation, your access to Sydney Student, Sydney email and CareerHub will remain for an additional 12 months. Withdrawn or deferred your studies: Your access will be removed to all University systems and applications except Sydney Student, Sydney email and CareerHub at the census date for the next semester.
+Item 105 of 132,
+Knowledge
+Resolve Certificate Revoked errors (Windows PC running Google Chrome)
+Item 106 of 132,
+Knowledge
+What is SAS?
+Item 107 of 132,
+Knowledge
+How a visitor gets access to University network
+Item 108 of 132,
+Knowledge
+Set up Cisco Jabber on Windows
+Item 109 of 132,
+Knowledge
+Data Handling Standard - approved applications
+Item 110 of 132,
+Knowledge
+What is ChemOffice ?
+Item 111 of 132,
+Knowledge
+How to access your voicemail on a Cisco phone
+Item 112 of 132,
+Knowledge
+Connect to eduroam wi-fi (Android)
+Item 113 of 132,
+Knowledge
+How do we block spam and malicious emails at the University?
+We use both Mimecast and Microsoft filtering as a frontline defence to stop spam and malicious emails being delivered to your mailbox. This is done in the following ways: Quarantining emails suspected to be spam. Attachments may be removed from emails if deemed malicious. URLs for external sites sent within emails are rewritten. Recipients reporting specific emails that appear to be spam, phishing and indicating what is not-spam. You can access quarantined email by opening the spam notification email which allows you to release, block or permit emails. You will receive a notification once a day between 12pm and 1pm if you have captured items. From the notification you have the option to release mail that has been mis-identified as spam. Spam is automatically deleted after 14 days, but if you would like to block spam that has been quarantined you can do this from the email. Release – This will release the current email on Hold to your Inbox. Permit – This delivers the email to your Inbox and adds the sender's address to your personal Permit list. Block – This rejects the email and adds the sender's address to your personal Block list to block future emails from this sender. Mimecast transforms URLs sent in email as a way of scanning external websites. This only applies to URLs for external sites and non-University services. Hover your mouse over an external site URL in an email and you will see the URL has been rewritten with the prefix 'protect-au.mimecast.com'. This indicates the URL will be scanned first by Mimecast before directing you to the site. Microsoft Outlook allows you to report spam, phishing and not-spam emails via the menu option 'Report Message'.
+Item 114 of 132,
+Knowledge
+How to change your Cisco Secure Voicemail PIN using the Web Inbox
+Item 115 of 132,
+Knowledge
+Set up a Cisco Jabber profile
+Item 116 of 132,
+Knowledge
+Connect to eduroam wi-fi (iPhone and iPad)
+Item 117 of 132,
+Knowledge
+MFA OKTA - Add a secondary email to your MFA profile
+Item 118 of 132,
+Knowledge
+How do I send an email as an attachment.
+Follow these step-by-step instructions: To send an email as an attachment in Outlook or through Microsoft Exchange, please do the following: Create a new email. Drag and drop the email you wish to attach from your Inbox into the new email you have created. To send an email as an attachment through Mozilla Thunderbird, please do the following: Open the message that you wish to attach and send. Select Message. Select Forward As. Select Attachment from the menu. Address and edit the email. Click Send to deliver it. To attach further emails to forward, new or reply messages alike, please do the following: Highlight the emails you want to attach in the message list. Drag and drop them onto the email composition's header area.
+Item 119 of 132,
+Knowledge
+What is Mathematica?
+Item 120 of 132,
+Knowledge
+Set up ArcGIS
+Item 121 of 132,
+Knowledge
+Log into the phonebook
+Item 122 of 132,
+Knowledge
+How to schedule a new meeting in the Zoom app
+Item 123 of 132,
+Knowledge
+What is a Virtual Machine (VM)?
+A Virtual Machine (VM) is a flexible, hosted computing environment. It is an emulation of a computer system containing an operating system, memory, processing power and all the functionality you can find in a physical desktop or server. You can access a VM's capabilities via any computer, without needing physical storage space for this VM. You can add software and change operating systems in a VM (just like your physical desktop). VMs are available for staff. If you select a standard VM, you can expect to receive your VM in as little as three working days. What are the differences between High-Performance Computing and Virtual Machines? A VM is: A hosted compute environment with a generic operating system, where the researcher can install any tools at their discretion. The specifications are low to mid-range performance, and ICT supports the operating system and networking aspects. The end user is responsible for maintaining applications and data flows. VMs are great for hosting long term and persistent applications, developing software, and building data workflows. HPC is: High-throughput computers for solving computational problems and processing data. It can run jobs with hundreds of cores or large memory requirements, and is configured for fast access to storage. There are massive amounts of resources available on the system and resources are provided through a batch queue. The VMs for Researchers service is designed to provide persistent hosting for more than large scale computation. The service provides: A hosted environment for your research; Accessible to your collaborators - via UniKey; Integration with the Research Data Store (RDS); Capability to install your software; Backup, maintenance and security options.
+Item 124 of 132,
+Knowledge
+MFA OKTA - Set up Google Authenticator as your primary factor
+Item 125 of 132,
+Knowledge
+How do I create or remove a digital ID to sign my PDF form?
+Item 126 of 132,
+Knowledge
+How to use delegate access in Outlook
+Delegate access can be used in Outlook to allow someone to manage your emails, meetings, and other items in your Microsoft Exchange Server mailbox on your behalf. The following are the conditions of use: As the manager, your mail must be delivered to your mailbox on the Exchange server without redirection. You and the delegate must use the same version of Outlook. How do I grant delegate access to a mailbox? To grant delegate access to a mailbox in Outlook, you need to: Click the File tab. Click Account Settings, then click Delegate Access. Click Add. Type the name of the user you wish to grant access to, or search for the name and select it from the Exchange Global Address list. Click Add, then click OK. In the Delegate Permissions dialog box, you can select custom access levels for Exchange folders. To notify the delegate of permissions, select the Automatically send a message to delegate summarizing these permissions check box. Click OK. To delegate access to private items: Click the File tab. Click Account Settings, then click Delegate Access. Select the name of the delegate, then click Permissions. Select the Delegate can see my private items check box.
+Item 127 of 132,
+Knowledge
+How to get a copy of MindManager
+Item 128 of 132,
+Knowledge
+Set up University email on my Android device
+Item 129 of 132,
+Knowledge
+What do I need to know about University phone numbers?
+The University of Sydney has been allocated the following telephone numbers: +61 2 9351 xxxx; +61 2 9036 xxxx; +61 2 9114 xxxx; +61 2 8627 xxxx; +61 2 8628 xxxx. At the University we treat the last 5 digits as the internal extension number on the University PABX. An extension is written as 12000 or 61234. If your extension starts with a 6xxxx then you need to tell external callers that your phone number is 903 6xxxx. Similarly if your extension starts with 1xxxx then you need to tell external callers that your phone number is 935 1xxxx. Extensions beginning with 2xxxx are 'dummy' numbers and are not registered to anyone. The phone with this extension can: call internal and emergency numbers, not make outgoing or receive incoming calls. If you are looking for a particular phone number for a University staff member, faculty or department try the Staff Directory.
+Item 130 of 132,
+Knowledge
+What is CloudStor and how do I use it?
+CloudStor is an online data storage service (similar to Dropbox or Google Drive) that makes sharing your data easy. Built with high performance computers for Australian researchers, it is designed to accommodate your large data storage needs. As a researcher you are eligible for 100 GB of free storage with additional storage available via paid subscription. This service is best for active research data that may need to be shared between multiple people. For other long term data storage needs, please read the article What is the Research Data Store (RDS)? or contact your IT Manager. How can I access CloudStor? Go to the CloudStor website - https://cloudstor.aarnet.edu.au. Select The University of Sydney from the list of institutions. The Australian Access Federation - AAF Login displays. Log in with your UniKey and UniKey password. Click Continue. You can then upload documents to CloudStor and when you have finished, log out. CloudStor offers a data synchronising client that can be installed on your computer (Windows, Mac and Linux). The software is called ownCloud. This sync client allows you to set up a folder on your computer to synchronise data to a selected folder on CloudStor.
+Item 131 of 132,
+Knowledge
+What is echo360?
+Echo360 is the University's enterprise application to capture and stream lecture recordings. The University upgraded to echo360 active learning platform (ALP) in 2019, which provides interactive learning features and functionality. Echo360 is accessed through Canvas, the University's learning management system. Opting out of lecture recording: If you have a valid reason to request that your lectures not be recorded, this option is available to you. EchoVideo Universal Capture (UC) is a cross-platform, simple capture interface that is accessible across both hardware and software, creating a consistent user experience across all capture mediums that allows you to create recordings to supplement your in-class materials.
+Item 132 of 132,
+Knowledge
+How do I forward all calls online via Cisco Self Care

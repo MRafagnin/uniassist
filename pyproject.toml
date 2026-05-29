@@ -24,6 +24,7 @@ dependencies = [
     "pyyaml>=6.0",
     "tenacity>=9.0",
     "playwright>=1.47,<2.0",
+    "rank-bm25>=0.2.2",
 ]
 
 [dependency-groups]

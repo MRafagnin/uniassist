@@ -14,7 +14,8 @@ dist/
 # Data (corpus + index are large / regenerable)
 data/raw/
 data/raw_servicenow/
-data/raw_manual/
+data/raw_manual/*
+!data/raw_manual/sn_top132.txt
 data/processed/
 data/chroma/
 data/uniassist.db
