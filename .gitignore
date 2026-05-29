@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.uv-cache/
+build/
+dist/
+
+# Env
+.env
+.env.local
+
+# Data (corpus + index are large / regenerable)
+data/raw/
+data/raw_manual/
+data/processed/
+data/chroma/
+data/uniassist.db
+data/*.db
+!data/.gitkeep
+
+# Eval outputs kept in repo (small markdown reports)
+# eval/results/ is intentionally NOT ignored
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local reference docs not meant for the public repo
+*.pdf
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/

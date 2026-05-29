@@ -1,0 +1,8 @@
+# Eval Q&A seed — populated on Day 3 from the scraped corpus.
+# Schema per entry:
+#   - question: str
+#     expected_source_url: str
+#     ideal_answer: str
+#     must_contain: [str, ...]
+#     category: str  # one of the triage categories or "OutOfScope"
+pairs: []
