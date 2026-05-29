@@ -13,6 +13,7 @@ dist/
 
 # Data (corpus + index are large / regenerable)
 data/raw/
+data/raw_servicenow/
 data/raw_manual/
 data/processed/
 data/chroma/
@@ -37,3 +38,6 @@ Thumbs.db
 .coverage
 htmlcov/
 .ruff_cache/
+
+# Local diagnostic logs
+*.log

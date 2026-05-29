@@ -37,6 +37,14 @@ def _same_host(url: str, seed_host: str) -> bool:
     return urlparse(url).netloc == seed_host
 
 
+def _path_allowed(url: str, prefixes: tuple[str, ...]) -> bool:
+    """Restrict crawl to URLs whose path starts with one of the allowed prefixes."""
+    if not prefixes:
+        return True
+    path = urlparse(url).path
+    return any(path.startswith(p) for p in prefixes)
+
+
 def _extract_links(html: str, base_url: str) -> list[str]:
     tree = HTMLParser(html)
     links: list[str] = []
@@ -96,6 +104,8 @@ def crawl(
             seen.add(url)
 
             if not _same_host(url, seed_host):
+                continue
+            if not _path_allowed(url, settings.scrape_path_prefixes):
                 continue
             if not robots.can_fetch(settings.scrape_user_agent, url):
                 log.info("robots.txt disallows %s", url)

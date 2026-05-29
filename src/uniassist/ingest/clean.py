@@ -19,7 +19,10 @@ from uniassist.config import settings
 
 log = logging.getLogger(__name__)
 
-MIN_BODY_CHARS = 200
+# Pages can be quite short (e.g. landing pages that mostly point to other
+# systems). We still want to keep them as 'concierge entries' that surface
+# the right links, so the threshold is low.
+MIN_BODY_CHARS = 80
 DROP_SELECTORS = (
     "script", "style", "noscript", "nav", "footer", "header",
     "aside", "form", "[role=navigation]", "[role=banner]",
@@ -62,7 +65,9 @@ def html_to_markdown(html: str) -> tuple[str, str]:
             node.decompose()
     title = _extract_title(tree)
     main_html = _extract_main_html(tree)
-    body = md(main_html, heading_style="ATX", strip=["a"]).strip() if main_html else ""
+    # Keep <a> tags so the produced markdown preserves outbound links — the
+    # retriever surfaces these so users can self-serve auth-gated systems.
+    body = md(main_html, heading_style="ATX").strip() if main_html else ""
     # Collapse runs of blank lines
     lines = [ln.rstrip() for ln in body.splitlines()]
     deduped: list[str] = []
@@ -133,4 +138,8 @@ def clean_all(
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-    clean_all()
+    # ServiceNow stubs are written directly to processed/ by
+    # ``uniassist.ingest.servicenow_scraper``; only the sydney.edu.au crawl
+    # produces raw HTML that needs cleaning.
+    n_web = clean_all(raw_dir=settings.raw_dir, source_type="web")
+    log.info("Total cleaned: %d (web)", n_web)

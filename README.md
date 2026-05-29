@@ -1,7 +1,6 @@
 # UniAssist
 
-> Local-first RAG + ticket-triage assistant for a university ICT service desk.
-> Built as a portfolio piece for the **Innovation Developer** role at the University of Sydney.
+> Local-first RAG + ticket-triage assistant for the University of Sydney ICT service desk.
 
 Runs entirely offline against [Ollama](https://ollama.com) — no cloud, no Docker, no SSO required.
 Sources: public University of Sydney student-IT pages + public ServiceNow KB articles.

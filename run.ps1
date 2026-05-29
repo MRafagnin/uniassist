@@ -1,17 +1,23 @@
 param(
     [Parameter(Position = 0)]
-    [ValidateSet("ingest", "scrape", "clean", "index", "api", "ui", "eval", "test", "lint")]
+    [ValidateSet("ingest", "scrape", "scrape-web", "scrape-sn", "clean", "index", "api", "ui", "eval", "test", "lint")]
     [string]$Task = "test"
 )
 
 $ErrorActionPreference = "Stop"
 
 switch ($Task) {
-    "scrape" { uv run python -m uniassist.ingest.scraper }
+    "scrape-web" { uv run python -m uniassist.ingest.scraper }
+    "scrape-sn"  { uv run python -m uniassist.ingest.servicenow_scraper }
+    "scrape" {
+        uv run python -m uniassist.ingest.scraper
+        uv run python -m uniassist.ingest.servicenow_scraper
+    }
     "clean"  { uv run python -m uniassist.ingest.clean }
     "index"  { uv run python -m uniassist.ingest.build_index }
     "ingest" {
         uv run python -m uniassist.ingest.scraper
+        uv run python -m uniassist.ingest.servicenow_scraper
         uv run python -m uniassist.ingest.clean
         uv run python -m uniassist.ingest.build_index
     }

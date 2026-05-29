@@ -36,15 +36,30 @@ class Settings(BaseSettings):
     # Scraper
     scrape_seed_url: str = "https://www.sydney.edu.au/students/student-it.html"
     scrape_max_pages: int = 150
-    scrape_max_depth: int = 2
+    scrape_max_depth: int = 3
     scrape_delay_seconds: float = 1.0
     scrape_user_agent: str = Field(
         default="UniAssistBot/0.1 (+https://github.com/MRafagnin/uniassist)"
+    )
+    # Only follow URLs whose path starts with one of these prefixes (same-host).
+    # Keeps the crawl focused on student-IT content instead of the whole sydney.edu.au site.
+    scrape_path_prefixes: tuple[str, ...] = (
+        "/students/student-it",
+        "/students/log-in-to-university-systems",
+        "/students/canvas",
+        "/students/minimum-computing-requirements",
+        "/students/keeping-your-information-safe",
+        "/students/scams",
+        "/students/new-students/digital-set-up",
     )
 
     @property
     def raw_dir(self) -> Path:
         return self.corpus_dir / "raw"
+
+    @property
+    def raw_servicenow_dir(self) -> Path:
+        return self.corpus_dir / "raw_servicenow"
 
     @property
     def raw_manual_dir(self) -> Path:
