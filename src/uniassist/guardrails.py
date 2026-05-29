@@ -15,17 +15,35 @@ def redact_pii(text: str) -> str:
     return text
 
 
-# Crude keyword heuristic — enough for Phase 1; refined in Phase 2 with an LLM call.
+# Alias used by Phase 2 callers.
+redact = redact_pii
+
+
 IN_SCOPE_KEYWORDS = (
     "wifi", "wi-fi", "uniwifi", "eduroam", "vpn", "password", "account",
     "email", "outlook", "m365", "office 365", "microsoft 365", "canvas",
-    "lms", "printer", "printing", "software", "license", "licence",
-    "mfa", "multi-factor", "okta", "laptop", "loan", "usyd", "sydney",
-    "student", "staff", "ict", "service desk", "it",
+    "lms", "printer", "printing", "print", "scan", "copy", "software",
+    "license", "licence", "adobe", "zoom", "qualtrics", "mfa", "multi-factor",
+    "okta", "sso", "unikey", "servicenow", "laptop", "mac", "macbook",
+    "windows", "library", "loan", "usyd", "sydney", "student", "staff",
+    "ict", "service desk", "it",
+)
+
+IN_SCOPE_VERBS = (
+    "install", "connect", "configure", "log in", "login", "sign in", "signin",
+    "access", "set up", "setup", "reset", "update", "enrol", "enroll",
+    "activate", "forward",
 )
 
 
+def is_in_scope(question: str) -> bool:
+    """Soft heuristic: True if the question looks like an IT support topic."""
+    lowered = question.lower()
+    if any(kw in lowered for kw in IN_SCOPE_KEYWORDS):
+        return True
+    return any(v in lowered for v in IN_SCOPE_VERBS)
+
+
 def is_likely_in_scope(text: str) -> bool:
-    """True if the text mentions at least one in-scope keyword."""
-    lowered = text.lower()
-    return any(kw in lowered for kw in IN_SCOPE_KEYWORDS)
+    """Back-compat alias used by Phase 1 tests."""
+    return is_in_scope(text)
