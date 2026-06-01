@@ -6,8 +6,9 @@ from contextlib import asynccontextmanager
 from typing import Any
 
 import httpx
-from fastapi import FastAPI
+from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
 from uniassist import logging_store
@@ -15,6 +16,7 @@ from uniassist.config import settings
 from uniassist.guardrails import redact
 from uniassist.rag.chain import ChatResponse
 from uniassist.rag.chain import answer as rag_answer
+from uniassist.rag.chain import answer_stream as rag_answer_stream
 from uniassist.triage.chain import TriageResponse
 from uniassist.triage.chain import triage as triage_call
 
@@ -90,6 +92,32 @@ def chat(req: ChatRequest) -> ChatResponse:
     return resp
 
 
+@app.post("/chat/stream")
+def chat_stream(req: ChatRequest) -> StreamingResponse:
+    """NDJSON stream of {token|citations|final} events."""
+    def _gen():
+        final_evt: dict[str, Any] | None = None
+        try:
+            for evt in rag_answer_stream(req.question):
+                if evt.get("type") == "final":
+                    final_evt = evt
+                yield json.dumps(evt, ensure_ascii=False) + "\n"
+        except Exception as exc:  # noqa: BLE001
+            yield json.dumps({"type": "error", "message": str(exc)}) + "\n"
+            return
+        if final_evt is not None:
+            logging_store.log_query(
+                endpoint="chat",
+                input_redacted=redact(req.question),
+                retrieved_ids=[c.get("file", "") for c in final_evt.get("citations", [])],
+                answer=final_evt.get("answer", ""),
+                latency_ms=final_evt.get("latency_ms", 0),
+                model=final_evt.get("model", settings.model_chat),
+            )
+
+    return StreamingResponse(_gen(), media_type="application/x-ndjson")
+
+
 @app.post("/triage", response_model=TriageResponse)
 def triage_endpoint(req: TriageRequest) -> TriageResponse:
     resp = triage_call(req.ticket_text)
@@ -106,3 +134,8 @@ def triage_endpoint(req: TriageRequest) -> TriageResponse:
 @app.get("/metrics")
 def metrics() -> dict[str, Any]:
     return logging_store.summary()
+
+
+@app.get("/recent")
+def recent(limit: int = Query(20, ge=1, le=200)) -> list[dict[str, Any]]:
+    return logging_store.recent(n=limit)

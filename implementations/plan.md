@@ -4,6 +4,15 @@ A 2–3 day, fully-local prototype targeting the **Innovation Developer** role a
 
 **Stack:** Ollama (`qwen2.5:7b-instruct` + `nomic-embed-text` + `llama3.1:8b` judge), LangChain, Chroma, FastAPI, Streamlit. **No cloud deploy, no Docker** — Loom video demo.
 
+## Phase status
+
+| Phase | Scope | State | Plan |
+| --- | --- | --- | --- |
+| 1 | Ingestion + index | ✅ Complete | — |
+| 2 | API + RAG + triage + logging + guardrails | ✅ Complete | [completed/phase-2.md](completed/phase-2.md) |
+| 3 | Streamlit UI + citation dedupe + `/recent` | ✅ Complete | [completed/phase-3.md](completed/phase-3.md) |
+| 4 | Eval harness + README case study + Loom | ❌ Not done — out of scope |
+
 ---
 
 ## Decisions (locked)
@@ -76,7 +85,7 @@ uniassist/
 
 ## Phased steps
 
-### Phase 1 — Foundations (Day 1)
+### Phase 1 — Foundations (Day 1) ✅ Complete
 
 1. **Project scaffold:** `uv init`, pin Python 3.11, install `langchain`, `langchain-ollama`, `langchain-chroma`, `chromadb`, `fastapi`, `uvicorn`, `streamlit`, `httpx`, `selectolax`, `markdownify`, `pydantic-settings`, `pytest`, `ruff`. Git init, `.gitignore`, `.env.example`.
 2. **Scraper** (`ingest/scraper.py`): BFS from `sydney.edu.au/students/student-it.html`, 1–2 levels deep, same-domain only, respect `robots.txt`, 1 req/sec, cap ~150 pages. Save raw HTML + URL manifest to `data/raw/`.
@@ -85,14 +94,14 @@ uniassist/
 5. **Index builder** (`ingest/build_index.py`): `RecursiveCharacterTextSplitter` (chunk 800, overlap 120), embed with `OllamaEmbeddings(model="nomic-embed-text")`, persist to Chroma at `data/chroma/`. Stores `source_type` in chunk metadata so the UI can badge `Web` vs `ServiceNow KB`.
 6. **Smoke test:** load retriever in a notebook, run 5 questions, eyeball results. Tune chunk size if retrieval is weak.
 
-### Phase 2 — Core product (Day 2)
+### Phase 2 — Core product (Day 2) ✅ Complete — see [completed/phase-2.md](completed/phase-2.md)
 
 7. **RAG chain** (`rag/chain.py`): LCEL — `{question} → retriever (MMR, k=5) → format_docs (numbered with source URLs) → ChatOllama(qwen2.5:7b-instruct) → parser`. System prompt enforces: cite sources as `[1]`, refuse if no relevant context, never invent URLs.
 8. **Triage chain** (`triage/chain.py`): Pydantic `TriageResult{category: Literal[...], subcategory: str, priority: Literal["P1"-"P4"], suggested_queue: str, rationale: str, confidence: float}`. Use `ChatOllama(format="json")` + Pydantic validation + retry-on-parse-fail. Categories: `WiFi`, `Email/M365`, `VPN`, `Account/Password`, `LMS/Canvas`, `Hardware`, `Software-licensing`, `Other`.
 9. **FastAPI** (`api.py`): `POST /chat`, `POST /triage`, `GET /metrics`, `GET /healthz`. Every call writes to `logging_store`.
 10. **Guardrails + PII** (`guardrails.py`): regex-redact emails and 9-digit student IDs before logging; out-of-scope refusal (keyword heuristic or cheap LLM call).
 
-### Phase 3 — UX + observability (Day 2 evening → Day 3 morning)
+### Phase 3 — UX + observability (Day 2 evening → Day 3 morning) ✅ Complete — see [completed/phase-3.md](completed/phase-3.md)
 
 11. **Streamlit UI** (`ui/app.py`):
     - **Chat tab** — chat history, answer + numbered citations as clickable links, latency badge, source-type chip (Web / ServiceNow).
@@ -100,7 +109,7 @@ uniassist/
     - **Metrics tab** — SQLite-backed: questions/day, avg latency, P50/P95, est. tokens, top categories. `st.metric` + `st.bar_chart`.
 12. **SQLite logging** (`logging_store.py`): table `queries(id, ts, endpoint, input_redacted, retrieved_ids, answer, latency_ms, tokens_in, tokens_out, model)`.
 
-### Phase 4 — Evaluation + narrative (Day 3)
+### Phase 4 — Evaluation + narrative (Day 3) ❌ Not done — out of scope
 
 13. **Eval set** (`eval/qa_pairs.yaml`): 25 hand-written Q&A pairs (drafted during prep). Schema: `{question, expected_source_url, ideal_answer, must_contain: [...]}`.
 14. **Eval runner** (`eval/run_eval.py`): metrics — `retrieval@5`, `faithfulness` (LLM-as-judge via `llama3.1:8b`), `must_contain_hits`, avg latency. Emit `eval/results/YYYY-MM-DD.md` table.

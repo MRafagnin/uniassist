@@ -28,10 +28,15 @@ class Settings(BaseSettings):
     sqlite_path: Path = REPO_ROOT / "data" / "uniassist.db"
 
     # Retrieval / chunking
-    retrieval_k: int = 5
+    retrieval_k: int = 2
     retrieval_fetch_k: int = 20
     chunk_size: int = 800
     chunk_overlap: int = 120
+
+    # Chat-LLM perf
+    chat_num_predict: int = 512
+    chat_num_ctx: int = 2048
+    chat_snippet_chars: int = 700
 
     # Scraper
     scrape_seed_url: str = "https://www.sydney.edu.au/students/student-it.html"

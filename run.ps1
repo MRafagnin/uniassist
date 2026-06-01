@@ -1,6 +1,6 @@
 param(
     [Parameter(Position = 0)]
-    [ValidateSet("ingest", "scrape", "scrape-web", "scrape-sn", "clean", "index", "api", "ui", "eval", "test", "lint")]
+    [ValidateSet("ingest", "scrape", "scrape-web", "scrape-sn", "clean", "index", "api", "ui", "dev", "eval", "test", "lint")]
     [string]$Task = "test"
 )
 
@@ -23,6 +23,12 @@ switch ($Task) {
     }
     "api"    { uv run uvicorn uniassist.api:app --reload --host 127.0.0.1 --port 8000 }
     "ui"     { uv run streamlit run src/uniassist/ui/app.py }
+    "dev"    {
+        Write-Host "Run the API and UI in two separate terminals:" -ForegroundColor Cyan
+        Write-Host "  Terminal 1:  .\run.ps1 api"
+        Write-Host "  Terminal 2:  .\run.ps1 ui"
+        Write-Host "Then open http://localhost:8501"
+    }
     "eval"   { uv run python -m eval.run_eval }
     "test"   { uv run pytest }
     "lint"   { uv run ruff check . }
