@@ -114,3 +114,19 @@ def test_cors_header_present(client):
     )
     assert r.status_code in (200, 204)
     assert r.headers.get("access-control-allow-origin") == "http://localhost:8501"
+
+
+def test_recent_endpoint(client):
+    client.post("/chat", json={"question": "wifi help"})
+    client.post("/triage", json={"ticket_text": "vpn"})
+    r = client.get("/recent?limit=5")
+    assert r.status_code == 200
+    body = r.json()
+    assert isinstance(body, list)
+    assert len(body) == 2
+    assert {row["endpoint"] for row in body} == {"chat", "triage"}
+
+
+def test_recent_endpoint_validates_limit(client):
+    assert client.get("/recent?limit=0").status_code == 422
+    assert client.get("/recent?limit=500").status_code == 422

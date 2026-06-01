@@ -72,7 +72,23 @@ def test_answer_extracts_citations_from_retrieved_docs(monkeypatch):
     assert resp.model
 
 
-def test_answer_returns_refusal_when_empty_and_out_of_scope(monkeypatch):
+def test_answer_returns_out_of_scope_refusal(monkeypatch):
+    def _fail_retr(_q):
+        raise AssertionError("Retriever should not be called for out-of-scope")
+
+    def _fail_llm(_m):
+        raise AssertionError("LLM should not be called on refusal path")
+
+    monkeypatch.setattr(rag_chain, "_retriever_invoke", _fail_retr)
+    monkeypatch.setattr(rag_chain, "_llm_invoke", _fail_llm)
+
+    resp = rag_chain.answer("recipe for apple pie")
+    assert "scope" in resp.answer.lower()
+    assert "Shared Service Centre" not in resp.answer
+    assert resp.citations == []
+
+
+def test_answer_returns_no_results_refusal_when_in_scope(monkeypatch):
     monkeypatch.setattr(rag_chain, "_retriever_invoke", lambda q: [])
 
     def _fail(_m):
@@ -80,6 +96,41 @@ def test_answer_returns_refusal_when_empty_and_out_of_scope(monkeypatch):
 
     monkeypatch.setattr(rag_chain, "_llm_invoke", _fail)
 
-    resp = rag_chain.answer("What's the weather like?")
+    resp = rag_chain.answer("How do I reset my UniKey password?")
     assert "Shared Service Centre" in resp.answer
     assert resp.citations == []
+
+
+def test_dedupe_docs_collapses_same_file():
+    docs = [
+        _doc("full doc", title="WiFi", source_type="web",
+             source_url="https://x/wifi", file="wifi.md"),
+        _doc("chunk 2", title="WiFi", source_type="web",
+             source_url="https://x/wifi", file="wifi.md", chunk_index=2),
+        _doc("vpn", title="VPN", source_type="web",
+             source_url="https://x/vpn", file="vpn.md", chunk_index=0),
+    ]
+    out = rag_chain._dedupe_docs(docs)
+    assert len(out) == 2
+    assert out[0].page_content == "full doc"
+    assert out[1].metadata["file"] == "vpn.md"
+
+
+def test_answer_dedupes_citations(monkeypatch):
+    docs = [
+        _doc("full", title="WiFi", source_type="web",
+             source_url="https://x/wifi", file="wifi.md"),
+        _doc("chunk", title="WiFi", source_type="web",
+             source_url="https://x/wifi", file="wifi.md", chunk_index=2),
+    ]
+
+    class FakeMsg:
+        content = "see [1]"
+
+    monkeypatch.setattr(rag_chain, "_retriever_invoke", lambda q: docs)
+    monkeypatch.setattr(rag_chain, "_llm_invoke", lambda m: FakeMsg())
+
+    resp = rag_chain.answer("How do I connect to UniWiFi?")
+    assert len(resp.citations) == 1
+    assert resp.citations[0].n == 1
+    assert resp.citations[0].file == "wifi.md"
